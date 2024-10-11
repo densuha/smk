@@ -14,12 +14,6 @@
                     case 'kepala':
                         include "smk/kepala/index.php";
                         break;
-                    case 'moto':
-                        include "smk/moto/index.php";
-                        break;
-                    case 'misi':
-                        include "smk/misi/index.php";
-                        break;
                     case 'guru':
                         include "smk/guru/index.php";
                         break;        

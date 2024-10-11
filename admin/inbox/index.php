@@ -1,3 +1,17 @@
+<?php
+// Jika halaman inbox diakses, update semua status pesan menjadi '0'
+include '../koneksi.php'; // Pastikan file koneksi sudah terhubung
+
+// Update status semua pesan yang masih memiliki status '1'
+mysqli_query($koneksi, "UPDATE inbox SET inbox_status='0' WHERE inbox_status='1'");
+
+// Setelah update, tampilkan pesan
+$query_inbox = mysqli_query($koneksi, "SELECT * FROM inbox ORDER BY id DESC");
+while ($inbox = mysqli_fetch_assoc($query_inbox)) {
+    // Tampilkan data pesan di sini
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en" <html>
 

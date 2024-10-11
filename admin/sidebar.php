@@ -7,7 +7,7 @@ $page  = $_GET['page'];
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
   <a href="../menu/index.php?page=home" class="brand-link">
-    <img src="../../assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <img src="./logo_smk.png" alt="AdminLTE Logo" class="brand-image img-circle " >
     <span class="brand-text font-weight-light">SMKN 1 BUAHDUA</span>
   </a>
   <div class="sidebar">

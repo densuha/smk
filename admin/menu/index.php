@@ -51,7 +51,6 @@ $row_about = mysqli_fetch_assoc($about);
       <!-- MAIN CONTENT -->
       <?php include 'content.php'; ?>
 
-      <?php include 'grafik.php'; ?>
       </div>
       </section>
       <!-- MAIN CONTENT -->

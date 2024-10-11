@@ -23,14 +23,14 @@ $isi = $data['isi'];
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,40
 0i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="../../assets/plugins/fontawesomefree/css/all.min.css">
+  <link rel="stylesheet" href="../../assets/plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.cs
 s">
   <!-- Tempusdominus Bootstrap 4 -->
-  <link rel="stylesheet" href="../../assets/plugins/tempusdominusbootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <link rel="stylesheet" href="../../assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
   <!-- iCheck -->
-  <link rel="stylesheet" href="../../assets/plugins/icheckbootstrap/icheck-bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
   <!-- JQVMap -->
   <link rel="stylesheet" href="../../assets/plugins/jqvmap/jqvmap.min.css">
   <!-- Theme style -->
@@ -94,10 +94,10 @@ navbar-light">
               <input type="hidden" name="id" value="<?=
                                                     $id ?>">
               <div class="form-group">
-                <label>Nama </label>
-                <input type="text" name="judul_post" class="form-control" placeholder="Masukan Nama pengumuman Media" value="<?= $judul ?>" required>
-                <label>NIM</label>
-                <input type="text" name="isi_post" class="form-control" placeholder="Masukan Link pengumuman Media" value="<?= $isi ?>" required>
+                <label>Judul Pengumuman </label>
+                <input type="text" name="judul_post" class="form-control" placeholder="Masukan Judul pengumuman Media" value="<?= $judul ?>" required>
+                <label>Deskripsi</label>
+                <input type="text" name="isi_post" class="form-control" placeholder="Masukan Deskripsi pengumuman Media" value="<?= $isi ?>" required>
               </div>
             </div>
             <!-- /.card-body -->
