@@ -84,6 +84,7 @@
                                         </div>
                                         <div class="col-md-10">
                                             <div class="event-heading">
+                                                <a href="isi_pengumuman.php">
                                                 <h3><?php echo $row->judul; ?></h3>
                                                 <p><?php echo $row->isi; ?></p>
                                             </div>
@@ -100,11 +101,6 @@
                                 <?php
                                 }
                                 ?>
-
-                            </div>
-                            <hr class="event-underline">
-                        </div>
-
                         <div class="col-md-12 text-center">
                             <?php echo $page; ?>
                         </div>

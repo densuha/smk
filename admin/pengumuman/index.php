@@ -61,7 +61,6 @@ float-right">Tambah Data</a>
                            <th>Judul pengumuman </th>
                            <th>Deskripsi</th>
                            <th>Tanggal</th>
-                           <th>gambar </th>
                            <th>Aksi</th>
                         </tr>
                      </thead>
@@ -79,7 +78,6 @@ float-right">Tambah Data</a>
                               <td><?= $data['judul']; ?></td>
                               <td><?= $data['isi']; ?></td>
                               <td><?= $data['pengumuman_tanggal']; ?></td>
-                              <td class="text-center"><img width="100" src="gambar/<?= $data['gambar']; ?>" width="100px"></td>
                               <td class="text-center">
                                  <a href="edit.php?id=<?=
                                                       $data['id']; ?>&page=pengumuman" class="btn btn-warning">Edit</a>

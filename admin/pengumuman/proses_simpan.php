@@ -8,29 +8,16 @@ $isi_post = $_POST['isi_post'];
 $tanggal_post = $_POST['tanggal_post'];
 
 
-//proses upload gambar
-$nama_file = $_FILES['gambar_post']['name'];
-$source = $_FILES['gambar_post']['tmp_name'];
-$folder = './gambar/';
 
-move_uploaded_file($source, $folder . $nama_file);
-//
-//si
-
-// Jika tipe kolom pengumuman_tanggal adalah DATETIME, tambahkan waktu
-
-// Simpan data ke database
 $insert = mysqli_query($koneksi, "INSERT INTO pengumuman (
   id, 
   judul, 
   isi, 
-  gambar, 
   pengumuman_tanggal
 ) VALUES (
   NULL, 
   '$judul_post', 
   '$isi_post', 
-  '$nama_file', 
   '$tanggal_post' -- Gunakan tanggal yang diambil dari form
 )");
 

@@ -7,8 +7,6 @@ $id = $_GET['id'];
 $query = mysqli_query($koneksi, "SELECT * FROM pengumuman WHERE id 
 = '$id'");
 $data = mysqli_fetch_array($query);
-$nama_file = $data['gambar'];
-unlink('./gambar/' . $nama_file);
 //
 //hapus data dari database
 $hapus = mysqli_query($koneksi, "DELETE FROM pengumuman WHERE id = 

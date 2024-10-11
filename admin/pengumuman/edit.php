@@ -99,22 +99,6 @@ navbar-light">
                 <label>NIM</label>
                 <input type="text" name="isi_post" class="form-control" placeholder="Masukan Link pengumuman Media" value="<?= $isi ?>" required>
               </div>
-              <div class="form-group">
-                <label>Pilih file</label>
-                <div class="input-group">
-                  <div class="custom-file">
-                    <input type="file" name="file_post" class="form-control-file">
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label>Pilih Gambar</label>
-                <div class="input-group">
-                  <div class="custom-file">
-                    <input type="file" name="gambar_post" class="form-control-file">
-                  </div>
-                </div>
-              </div>
             </div>
             <!-- /.card-body -->
             <div class="card-footer">

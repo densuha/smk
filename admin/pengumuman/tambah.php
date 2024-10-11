@@ -84,16 +84,6 @@ active">Tambah Data pengumuman </li>
     <label for="tanggal_post">Tanggal Pengumuman:</label>
     <input type="date" name="tanggal_post" required><br>
               </div>
-              <div class="form-group">
-                <div class="form-group">
-                  <label>Pilih file</label>
-                  <div class="input-group">
-                    <div class="custom-file">
-                      <input type="file" name="gambar_post" class="form-control-file">
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
         </div>
         <!-- /.card-body -->
