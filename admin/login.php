@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MASUK</title>
+  <title>ADMIN | PANEL</title>
 
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
    <!-- Google Font: Source Sans Pro -->
@@ -47,6 +47,7 @@ if (isset($_POST['submit'])) {
    <link rel="stylesheet" href="../assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
    <link rel="stylesheet" href="../assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
    <link rel="stylesheet" href="../assets/plugins/fontawesome-free/css/all.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 
    <!-- Theme style -->
    <link rel="stylesheet" href="../assets/dist/css/adminlte.min.css">
@@ -54,10 +55,11 @@ if (isset($_POST['submit'])) {
 
 <body class="hold-transition login-page">
   
-<div class="preloader flex-column justify-content-center alignitems-center">
+<div class="preloader flex-column justify-content-center align-items-center">
          <img class="animation__shake" src="../assets/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
       </div>
   <div class="login-box">
+  <p class="login-box-msg"> <img width="100px;" src="./menu/logo_smk.png"></p>
     <div class="login-logo">
       <a href="index2.html"><b>Admin Panel</b></a>
     </div>
@@ -101,7 +103,7 @@ if (isset($_POST['submit'])) {
         </form>
       </div>
       <!-- /.social-auth-links -->
-      <hr/>
+    
     <p><center>Copyright <?php echo date('Y');?> SMKN 1 BUAHDUA <br/> All Right Reserved</center></p>
   </div>
     </div>

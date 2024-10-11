@@ -2,9 +2,10 @@
 <html lang="en" <html>
 
 <head>
-   <meta charset="utf-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <title>data kepala</title>
+<meta charset="utf-8">
+   <link rel="shorcut icon" type="text/css" href="./assets/images/icon.png">
+   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+   <title>Admin Panel</title>
    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
    <!-- Google Font: Source Sans Pro -->
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -13,6 +14,9 @@
    <link rel="stylesheet" href="../../assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
    <link rel="stylesheet" href="../../assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
    <link rel="stylesheet" href="../../assets/plugins/fontawesome-free/css/all.min.css">
+
+   <!-- Theme style -->
+   <link rel="stylesheet" href="../../assets/dist/css/adminlte.min.css">
 
    <!-- Theme style -->
    <link rel="stylesheet" href="../../assets/dist/css/adminlte.min.css">
@@ -25,18 +29,9 @@
          <img class="animation__shake" src="../../assets/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
       </div>
 
-      <nav class="main-header navbar navbar-expand navbar-white 
-navbar-light">
-         <ul class="navbar-nav">
-            <li class="nav-item">
-               <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-            </li>
-         </ul>
-         <ul class="navbar-nav ml-auto">
-         </ul>
-      </nav>
                <!-- /.sidebar -->
-      <?php include '../sidebar.php'; ?>
+               <?php include '../navbar.php'; ?>
+               <?php include '../sidebar.php'; ?>
                <!-- /.sidebar -->
       <div class="content-wrapper">
          <div class="content-header">
@@ -104,13 +99,9 @@ float-right">Tambah Data</a>
          </section>
          <!-- MAIN CONTENT -->
       </div>
-      <footer class="main-footer">
-         <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
-         All rights reserved.
-         <div class="float-right d-none d-sm-inline-block">
-            <b>Version</b> 3.2.0
-         </div>
-      </footer>
+     <?php 
+     include '../footer.php';
+     ?>
       <aside class="control-sidebar control-sidebar-dark">
       </aside>
    </div>
