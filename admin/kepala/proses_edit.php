@@ -5,7 +5,6 @@ include '../../koneksi.php';
 //ambil data dari form
 $id = $_POST['id'];
 $nama_post = $_POST['nama_post'];
-$sambutan_post = $_POST['sambutan_post'];
 
 
 //proses upload icon
@@ -16,7 +15,6 @@ $folder = './gambar/';
 //update data ke database
 $update = mysqli_query($koneksi, "UPDATE kepala SET
 nama = '$nama_post',
-sambutan = '$sambutan_post',
 gambar = '$nama_file'
 WHERE id = '$id'");
 //cek apakah proses edit ke database berhasil

@@ -8,7 +8,6 @@ $id = $_GET['id'];
 $query = mysqli_query($koneksi, "SELECT * FROM kepala WHERE id = '$id'");
 $data = mysqli_fetch_array($query);
 $nama_post = $data['nama'];
-$sambutan_post = $data['sambutan'];
 $gambar = $data['gambar'];
 //
 ?>
@@ -93,8 +92,6 @@ navbar-light">
               <div class="form-group">
                 <label>Nama Kepala Sekolah</label>
                 <input type="text" name="nama_post" class="form-control" placeholder="Masukan Nama Kepala Sekolah" value="<?= $nama_post ?>" required>
-                <label>Sambutan Kepala Sekolah</label>
-                <input type="text" name="nama_post" class="form-control" placeholder="Masukan Sambutan Kepala Sekolah" value="<?= $sambutan_post ?>" required>
               </div>
               <div class="form-group">
                 <label>Foto Kepala Sekolah</label>

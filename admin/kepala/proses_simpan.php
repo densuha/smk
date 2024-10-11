@@ -4,7 +4,6 @@ include '../../koneksi.php';
 
 //ambil data dari form
 $nama_post = $_POST['nama_post'];
-$sambutan_post = $_POST['sambutan_post'];
 
 
 //proses upload gambar
@@ -18,7 +17,6 @@ move_uploaded_file($source, $folder . $nama_file);
 $insert = mysqli_query($koneksi, "INSERT INTO kepala VALUES (
  NULL,
 '$nama_post',
-'$sambutan_post',
 '$nama_file'
  )");
 //

@@ -57,7 +57,7 @@ $result = mysqli_query($koneksi, $query);
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2 class="mb-5">Guru Kami</h2>
+                    <h2 class="mb-5">Guru Dan Staff</h2>
                 </div>
             </div>
             <div class="row">
@@ -70,15 +70,13 @@ $result = mysqli_query($koneksi, $query);
           $gurugambar = $row['gambar'];
           $idguru = $row['id'];
         ?>
-          <div class="col-md-3">
-            <div class="card mb-4">
-              <img width="100" height="300" src="./admin/guru/gambar/<?php echo $gurugambar; ?>" class="card-img-top" alt="<?php echo $guruNama; ?>">
+          <div class="col-md-3 mb-3">
+          <div class="card shadow">
+              <img src="./admin/guru/gambar/<?php echo $gurugambar; ?>" class="card-img-top" alt="<?php echo $guruNama; ?>">
               <div class="card-body">
                 <h5 class="card-title"><?php echo $guruNama; ?></h5>
                 <h5 class="card-title"><?php echo $guruNip; ?></h5>
-                <h5 class="card-title"><?php echo $guruPelajaran; ?></h5>
-                <p class="card-text"></p>
-                
+                <h5 class="card-title"><?php echo $guruPelajaran; ?></h5>  
               </div>
             </div>
           </div>

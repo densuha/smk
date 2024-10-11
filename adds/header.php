@@ -3,33 +3,36 @@ $base_url = "http://localhost/smk/";
 $page  = isset($_GET['page']) ? $_GET['page'] : ''; // Cek apakah 'page' ada
 ?>
 
-<div class="header-topbar ">
-    <div class="container-fluid "> <!-- Mengganti container dengan container-fluid -->
-        <div class="row">
-            <div class="col-12 col-md-9">
-                <div class="header-top_address">
-                    <div class="header-top_list">
-                        <span class="icon-phone"></span>000000000000
+<div class="header-topbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-8 ">
+                    <div class="header-top_address">
+                        <div class="header-top_list">
+                            <span class="icon-phone"></span>000000000000
+                        </div>
+                        <div class="header-top_list">
+                            <span class="icon-envelope-open"></span>smkn1buahdua@gmail.com
+                        </div>
+                        <div class="header-top_list">
+                            <span class="icon-location-pin"></span>Jln.Raya, Bojongloa, Kec.Buahdua
+                        </div>
                     </div>
-                    <div class="header-top_list">
-                        <span class="icon-envelope-open"></span>smkn1buahdua@gmail.com
-                    </div>
-                    <div class="header-top_list">
-                        <span class="icon-location-pin"></span>Jln.Raya, Bojongloa, Kec.Buahdua
+                    <div class="header-top_login2">
+                        <a href="#">Hubungi Kami</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-3 text-end">
-                <div class="header-top_login">
-                    <a href="#">Hubungi Kami</a>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                    <div class="header-top_login mr-sm-3">
+                        <a href="#">Hubungi Kami</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
 <div data-toggle="affix">
-    <div class="container-fluid nav-menu2"> <!-- Mengganti container dengan container-fluid -->
+    <div class="container-fluid nav-menu2" > <!-- Mengganti container dengan container-fluid -->
         <div class="row">
             <div class="col-12">
                 <nav class="navbar navbar-expand-lg navbar-light bg-faded" >
@@ -41,7 +44,7 @@ $page  = isset($_GET['page']) ? $_GET['page'] : ''; // Cek apakah 'page' ada
                     </button>
 
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav col-xs-6 col-sm-8 col-sm-9 ">
                             <li>
                             <a href="#" class="navbar-brand nav-brand2">
                         <img class="img img-responsive" width="200px;" src="./css/images/logo-white.png" alt="Logo SMK">
@@ -58,9 +61,9 @@ $page  = isset($_GET['page']) ? $_GET['page'] : ''; // Cek apakah 'page' ada
                                     Akademik
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="akademikDropdown">
-                                    <li><a class="dropdown-item" href="<?= $base_url ?>guru.php?categori=2">Guru</a></li>
-                                    <li><a class="dropdown-item" href="<?= $base_url ?>jurusan.php?categori=3">Jurusan</a></li>
-                                    <li><a class="dropdown-item" href="<?= $base_url ?>pengumuman.php?categori=4">Pengumuman</a></li>
+                                    <li><a class="dropdown-item" href="<?= $base_url ?>guru.php?categori=2">Guru Dan Staff</a></li>
+                                    <li><a class="dropdown-item" href="<?= $base_url ?>jurusan.php?categori=3">Program Keahlian</a></li>
+                                    <li><a class="dropdown-item" href="<?= $base_url ?>pengumuman.php?categori=0">#</a></li>
                                 </ul>
                             </li>
 
@@ -70,9 +73,9 @@ $page  = isset($_GET['page']) ? $_GET['page'] : ''; // Cek apakah 'page' ada
                                     Pengumuman
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="pengumumanDropdown">
-                                    <li><a class="dropdown-item" href="<?= $base_url ?>pengumuman.php?categori=3">Pengumuman</a></li>
-                                    <li><a class="dropdown-item" href="<?= $base_url ?>postingan.php?categori=4">Postingan</a></li>
+                                    <li><a class="dropdown-item" href="<?= $base_url ?>pengumuman.php?categori=4">Pengumuman</a></li>
                                     <li><a class="dropdown-item" href="<?= $base_url ?>galery.php?categori=6">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="<?= $base_url ?>postingan.php?categori=5">#</a></li>
                                 </ul>
                             </li>
 

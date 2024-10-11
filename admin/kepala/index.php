@@ -43,7 +43,7 @@ navbar-light">
             <div class="container-fluid">
                <div class="row mb-2">
                   <div class="col-sm-6">
-                     <h1 class="m-0">kepala Sekolah Dan Sambutan</h1>
+                     <h1 class="m-0">Data Kepala Sekolah</h1>
                   </div><!-- /.col -->
                   <div class="col-sm-6">
                      <ol class="breadcrumb float-sm-right">
@@ -69,7 +69,6 @@ float-right">Tambah Data</a>
                         <tr>
                            <th style="width: 10px">No</th>
                            <th>Nama Kepala Sekolah</th>
-                           <th>Sambutan</th>
                            <th>Foto Kepala Sekolah</th>
                            <th>Aksi</th>
                         </tr>
@@ -84,7 +83,6 @@ float-right">Tambah Data</a>
                            <tr>
                               <td><?= $no++; ?></td>
                               <td><?= $data['nama']; ?></td>
-                              <td><?= $data['sambutan']; ?></td>
                               <td class="text-center"><img width="100" src="gambar/<?= $data['gambar']; ?>" width="100px"></td>
                               <td class="text-center">
                                  <a href="edit.php?id=<?=

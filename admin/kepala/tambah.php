@@ -77,8 +77,6 @@ navbar-light">
               <div class="form-group">
                 <label>Nama Kepala Sekolah</label>
                 <input type="text" name="nama_post" class="form-control" placeholder="Masukan Nama Kepala Sekolah" required>
-                <label>Sambutan Kepala Sekolah</label>
-                <input type="text" name="sambutan_post" class="form-control" placeholder="Masukan Sambutan Kepala Sekolah" required>
               </div>
               <div class="form-group">
                 <label>Foto Kepala Sekolah</label>

@@ -68,7 +68,9 @@ $namakepala = $sambutanData['nama'];
     <div class="container">
         <div class="row">
             <div class="col-md-8">
-               <h2>Selamat Datang</h2>
+            <div class="contact-title">
+                        <h2>Selamat Datang</h2>
+                    </div>
                <p>Perkembangan teknologi saat ini menuntut tersedianya tenaga kerja yang kompeten dan handal 
 di berbagai bidang agar sebuah negara mampu bertahan dan berperan dalam era yang penuh 
 persaingan dan sekaligus membuka dan memanfaatkan setiap peluang. Untuk meningkatkan 
@@ -92,70 +94,146 @@ terintegrasi dengan memperhatikan tujuan dan kebutuhan Dunia Kerja.<p>
     </div>
 </section>
 <!--//END ABOUT -->
+
+<!--============================= OUR COURSES =============================-->
+<section class="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2 class="event-title">Pengumuman</h2>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div class="tab-pane active" id="upcoming-events" role="tabpanel">
+                        <div class="col-md-12">
+                            <div class="row">
+
+                                <!-- PHP: Koneksi dan Query Database -->
+                                <?php
+                                include './koneksi.php';
+
+                                // Query untuk mengambil data pengumuman
+                                $query = "SELECT * FROM pengumuman ORDER BY pengumuman_tanggal DESC";
+                                $result = mysqli_query($koneksi, $query);
+
+                                // Cek apakah query berhasil dan ada data
+                                if ($result && mysqli_num_rows($result) > 0) {
+                                    // Looping data hasil query
+                                    while ($row = mysqli_fetch_object($result)) {
+                                ?>
+                                        <div class="col-md-2">
+                                            <div class="event-date">
+                                                <h4><?php echo date("d", strtotime($row->pengumuman_tanggal)); ?></h4>
+                                            </div>
+                                            <span class="event-time"><?php echo date("M Y", strtotime($row->pengumuman_tanggal)); ?></span>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="event-heading">
+                                                <h3><?php echo $row->judul; ?></h3>
+                                                <p><?php echo $row->isi; ?></p>
+                                            </div>
+                                        </div>
+                                        <hr class="event-underline">
+                                    <?php
+                                    }
+                                } else {
+                                    // Jika tidak ada data pengumuman
+                                    ?>
+                                    <div class="col-md-12">
+                                        <p>Tidak ada pengumuman yang tersedia.</p>
+                                    </div>
+                                <?php
+                                }
+                                ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 <!--============================= OUR COURSES =============================-->
 <section id="programs" class="container">
-  <h2 class="text-center mb-4">Jurusan</h2>
-  <div class="row">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact-title">
+                        <h2>JURUSAN SMKN 1 BUAHDUA</h2>
+                    </div>
+                </div>
+            </div>
+<div class="row">
     <div class="col-md-3 mb-3">
-      <div class="card shadow">
-        <!-- Gambar untuk Teknik Ototronik -->
-        <img src="./css/images/tot.png" class="card-img-top" alt="Teknik Ototronik">
-        <div class="card-body">
-          <h5 class="card-title">Teknik Ototronik</h5>
-          <p class="card-text">Program Keahlian Teknik Otomotif di SMKN 1 BUAHDUA lebih 
-          terkonsentrasi ke perawatan Kendaraan Ringan Otomotif dan Ototronik.</p>
+        <div class="card shadow">
+            <!-- Gambar untuk Teknik Ototronik dengan tautan -->
+            <a href="page-teknik-ototronik.html">
+                <img src="./css/images/tot.png" class="card-img-top" alt="Teknik Ototronik">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Teknik Ototronik</h5>
+                <p class="card-text">Program Keahlian Teknik Otomotif di SMKN 1 BUAHDUA lebih terkonsentrasi ke perawatan Kendaraan Ringan Otomotif dan Ototronik.</p>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="col-md-3 mb-3">
-      <div class="card shadow">
-        <!-- Gambar untuk Teknik Kendaraan Ringan Otomotif -->
-        <img src="./css/images/tkro.png" class="card-img-top" alt="TKRO">
-        <div class="card-body">
-          <h5 class="card-title">Program Keahlian Teknik Otomotif </h5>
-          <p class="card-text">Program Keahlian Teknik Otomotif di SMKN 1 BUAHDUA lebih 
-terkonsentrasi ke perawatan Kendaraan Ringan Otomotif dan Ototronik.</p>
+        <div class="card shadow">
+            <!-- Gambar untuk Teknik Kendaraan Ringan Otomotif dengan tautan -->
+            <a href="page-tkro.html">
+                <img src="./css/images/tkro.png" class="card-img-top" alt="TKRO">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Program Keahlian Teknik Otomotif</h5>
+                <p class="card-text">Program Keahlian Teknik Otomotif di SMKN 1 BUAHDUA lebih terkonsentrasi ke perawatan Kendaraan Ringan Otomotif dan Ototronik.</p>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="col-md-3 mb-3">
-      <div class="card shadow">
-        <!-- Gambar untuk Teknik Komputer dan Jaringan -->
-        <img src="./css/images/tkj.png" class="card-img-top" alt="TKJ">
-        <div class="card-body">
-          <h5 class="card-title">Program Keahlian Teknik Jaringan Komputer dan Telekomunikasi. </h5>
-          <p class="card-text">Program Keahlian Teknik Jaringan Komputer dan Telekomunikasi di SMKN 1 BUAHDUA lebih terkonsentrasi Komputer jaringan. </p>
+        <div class="card shadow">
+            <!-- Gambar untuk Teknik Komputer dan Jaringan dengan tautan -->
+            <a href="page-tkj.html">
+                <img src="./css/images/tkj.png" class="card-img-top" alt="TKJ">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Program Keahlian Teknik Jaringan Komputer dan Telekomunikasi</h5>
+                <p class="card-text">Program Keahlian Teknik Jaringan Komputer dan Telekomunikasi di SMKN 1 BUAHDUA lebih terkonsentrasi Komputer jaringan.</p>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="col-md-3 mb-3">
-      <div class="card shadow">
-        <!-- Gambar untuk Akuntansi dan Keuangan Lembaga -->
-        <img src="./css/images/AKL.png" class="card-img-top" alt="AKL">
-        <div class="card-body">
-          <h5 class="card-title">Program Keahlian Akuntansi dan Keuangan Lembaga.</h5>
-          <p class="card-text">Program keahlian Akuntansi dan Keuangan Lembaga di SMKN 1 BUAHDUA lebih terkonsentasi Akuntansi Keuangan.</p>
+        <div class="card shadow">
+            <!-- Gambar untuk Akuntansi dan Keuangan Lembaga dengan tautan -->
+            <a href="page-akl.html">
+                <img src="./css/images/AKL.png" class="card-img-top" alt="AKL">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Program Keahlian Akuntansi dan Keuangan Lembaga</h5>
+                <p class="card-text">Program keahlian Akuntansi dan Keuangan Lembaga di SMKN 1 BUAHDUA lebih terkonsentrasi Akuntansi Keuangan.</p>
+            </div>
         </div>
-      </div>
     </div>
+
     <div class="col-md-3 mb-3">
-      <div class="card shadow">
-        <!-- Gambar untuk Bisnis Daring dan Pemasaran -->
-        <img src="./css/images/BDPM.png" class="card-img-top" alt="BDPM">
-        <div class="card-body">
-          <h5 class="card-title">Program Keahlian Pemasaran.</h5>
-          <p class="card-text"> Program Keahlian Pemasaran di SMKN 1 BUAHDUA lebih terkonsentrasi ke 
-Bisnis Daring dan Pemasaran . </p>
+        <div class="card shadow">
+            <!-- Gambar untuk Bisnis Daring dan Pemasaran dengan tautan -->
+            <a href="page-bdpm.html">
+                <img src="./css/images/BDPM.png" class="card-img-top" alt="BDPM">
+            </a>
+            <div class="card-body">
+                <h5 class="card-title">Program Keahlian Pemasaran</h5>
+                <p class="card-text">Program Keahlian Pemasaran di SMKN 1 BUAHDUA lebih terkonsentrasi ke Bisnis Daring dan Pemasaran.</p>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
+
 </section>
 <!--//END OUR COURSES -->
-
+ 
 <!--============================= DETAILED CHART =============================-->
 <?php 
 include "./adds/chart.php";

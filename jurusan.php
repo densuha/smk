@@ -3,5 +3,5 @@ include("./koneksi.php");
 ?>
 
 <?php  
-include("./adds/perbaikan.php");
+include("./depan/jurusan.php");
 ?>
