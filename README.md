@@ -11,19 +11,19 @@ Namun Website Ini masih Prototype dan masih website PHP native
 # HALAMAN FRONT END:
 1. Halaman Beranda/Homepage
 2. Slider
-Halaman Pengumuman
-Halaman Staff dan Guru
-Halaman galry
-Halaman jurusan
-Halaman contact
-Halaman tentang
-Halaman kontak
-Floating whatsapp button
+3. Halaman Pengumuman
+4. Halaman Staff dan Guru
+5. Halaman galry
+6. Halaman jurusan
+7. Halaman contact
+8. Halaman tentang
+9. Halaman kontak
+10. Floating whatsapp button
 
 #HALAMAN BACK END:
 1. Halaman Login dan logout
 2. Halaman Dashboard
-3. Halaman kelola berita dan kategorinya
-4. Halaman kelola Galeri dan Banner dan kategorinya
-5. Halaman kelola staff and team dan kategorinya
+3. Halaman kelola pengumuman
+4. Halaman kelola Galeri dan slider
+5. Halaman kelola staff and guru
 Dan fitur lainnya
